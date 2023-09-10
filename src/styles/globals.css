@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +17,52 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.SpeedDialWithTextOutside {
+  bottom: 30px;
+  right: 20px;
+}
+.textStyle {
+  left: -100%;
+  top: 25%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+/* ========== || OVERIDE STYLE BUTTON || ======== */
+/* ================================================= */
+
+.buttonPrimary {
+  padding: 10px 20px;
+  background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+  background-size: 300% 100%;
+  border-radius: 50px;
+  box-shadow: #0bd1d1 0px 4px 15px 0px;
+}
+.buttonPrimary:hover {
+  background-position: 100% 0px;
+  transition: background 0.4s ease-in-out 0s;
+}
+
+/* ========== || OVERIDE STYLE COMPONENT|| ======== */
+/* ================================================= */
+
+.wrapper-banner .wrap-text__about h2 {
+  font-size: 48px;
+  color: #0bd1d1;
+  font-weight: 700;
+}
+
+/* ======== || STYLE TEXT COLOR || ========= */
+/* ========================================== */
+
+.style-text__border {
+  -webkit-text-fill-color: #ffff;
+}
+.style-text__gradient {
+  margin: 0;
+  -webkit-background-clip: text !important;
+  background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
