@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="mx-auto mb-4 md:mb-10">
           <Logo />
         </div>
-        <ul className=" md:flex items-center justify-center gap-4 lg:gap-8 mb-4 md:mb-10 ">
+        <ul className="grid grid-cols-3  md:flex items-center justify-center gap-4 lg:gap-8 mb-4 md:mb-10 ">
           {menuItems &&
             menuItems.map((items, index) => {
               return (

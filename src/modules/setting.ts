@@ -10,7 +10,7 @@ export const menuItems: listMenus[] = [
   },
   {
     title: "About",
-    href: "/abour",
+    href: "/about",
   },
   {
     title: "Blocks",
@@ -23,5 +23,9 @@ export const menuItems: listMenus[] = [
   {
     title: "Blogs",
     href: "/blogs",
+  },
+  {
+    title: "Gallery",
+    href: "/gallery",
   },
 ];

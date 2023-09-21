@@ -14,14 +14,14 @@ const About = () => {
           className="relative flex items-center xl:items-start justify-end"
           data-aos="fade-right"
           data-aos-duration="1500">
-          <div className="w-full p-4 lg:w-[80%] rounded-md overflow-hidden relative z-10">
+          <div className="w-full p-4 rounded-lg overflow-hidden scale-x-[-1] relative z-10">
             <ReponsiveImageResize
-              src={"/image/dev-2.jpg"}
+              src={"/image/dev-6.png"}
               alt="/banner-dev"
               heightSize={"pt-[100%]"}
             />
           </div>
-          <div className="absolute bottom-0 left-0">
+          <div className="hidden absolute bottom-0 left-0">
             <ReponsiveImageAuto
               src="/svg/effect-1.svg"
               alt="logo-dev-portfolio"
@@ -38,7 +38,7 @@ const About = () => {
           <div className="relative z-10">
             <Chip
               value="ABOUT US"
-              className="bg-primary w-fit mb-5 font-bold"
+              className="bg-primary w-fit mb-5 font-bold text-lg"
             />
             <Typography
               variant="h1"

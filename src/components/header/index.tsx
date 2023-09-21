@@ -10,7 +10,7 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 import ListMenuItems from "./ListMenuItems";
-import { BsFillMenuButtonWideFill } from "react-icons/bs";
+import { HiMenuAlt3 } from "react-icons/hi";
 import Logo from "../Logo";
 import MenuSlider from "./MenuSlider";
 import ToogleDarkLight from "./ToogleDarkLight";
@@ -54,10 +54,10 @@ const Header = () => {
           <div className="flex items-center">
             <Logo />
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <ListMenuItems />
           </div>
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-6">
             <div>
               <ToogleDarkLight />
             </div>
@@ -78,17 +78,15 @@ const Header = () => {
               </svg>
             </Button>
           </div>
-          <div className="flex items-center gap-5 lg:hidden">
+          <div className="flex items-center gap-5 xl:hidden">
             <div>
               <ToogleDarkLight />
             </div>
-            <IconButton
-              variant="text"
-              className="ml-auto h-10 w-10 text-inherit dark:bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent "
-              ripple={false}
+            <Button
+              className="ml-auto border border-primary rounded-full w-14 h-14 text-inherit p-0  flex items-center justify-center dark:bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent "
               onClick={openDrawer}>
-              <BsFillMenuButtonWideFill size={40} color="aqua" />
-            </IconButton>
+              <HiMenuAlt3 size={30} color="aqua" />
+            </Button>
           </div>
         </div>
       </Navbar>

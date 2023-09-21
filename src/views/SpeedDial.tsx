@@ -17,7 +17,7 @@ const SpeedDialWithTextOutside = () => {
       <SpeedDial>
         <SpeedDialHandler>
           <IconButton size="lg" className="rounded-full dark:bg-primary">
-            <HiMail className="h-5 w-5 transition-transform group-hover:rotate-45 fill-black" />
+            <HiMail className="h-5 w-5 transition-transform group-hover:rotate-45 fill-white" />
           </IconButton>
         </SpeedDialHandler>
         <SpeedDialContent>

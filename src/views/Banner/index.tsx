@@ -14,12 +14,15 @@ const Banner = () => {
       id="home"
       className="relative z-10  pt-[120px] md:pt-[170px]   wrapper-banner">
       <div className="container mx-auto px-4 ">
-        <div className=" flex flex-col-reverse md:grid md:grid-cols-2 gap-4 ">
+        <div className=" flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 ">
           <div
             className="wrap-text__about"
             data-aos="fade-right"
             data-aos-duration="2000">
-            <Chip value="PHONG DANIEL" className="bg-primary w-fit mb-5" />
+            <Chip
+              value="PHONG DANIEL"
+              className="bg-primary w-fit mb-5 text-lg"
+            />
             <div>
               <Typical
                 loop={Infinity}

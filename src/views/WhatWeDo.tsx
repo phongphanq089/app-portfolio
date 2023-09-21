@@ -34,7 +34,10 @@ const WhatWeDo = () => {
       <div className="border rounded-md border-border p-4 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="lg:col-span-1">
           <div data-aos="fade-right" data-aos-duration="1500">
-            <Chip value="WHAT WE DO" className="bg-primary w-fit mb-5" />
+            <Chip
+              value="WHAT WE DO"
+              className="bg-primary w-fit mb-5 text-lg"
+            />
             <Typography
               variant="h1"
               className="text-4xl md:text-5xl style-text__gradient">
